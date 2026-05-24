@@ -1640,7 +1640,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         UINT StructureByteStride,
         UINT64 FirstElement = 0) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = DXGI_FORMAT_UNKNOWN;
         desc.ViewDimension = D3D12_SRV_DIMENSION_BUFFER;
         desc.Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING;
@@ -1655,7 +1655,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         UINT NumElements,
         UINT64 FirstElement = 0) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = DXGI_FORMAT_R32_UINT;
         desc.ViewDimension = D3D12_SRV_DIMENSION_BUFFER;
         desc.Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING;
@@ -1672,7 +1672,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         UINT64 FirstElement = 0,
         UINT Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_SRV_DIMENSION_BUFFER;
         desc.Shader4ComponentMapping = Shader4ComponentMapping;
@@ -1690,7 +1690,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         FLOAT ResourceMinLODClamp = 0.0f,
         UINT Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURE1D;
         desc.Shader4ComponentMapping = Shader4ComponentMapping;
@@ -1709,7 +1709,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         FLOAT ResourceMinLODClamp = 0.0f,
         UINT Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURE1DARRAY;
         desc.Shader4ComponentMapping = Shader4ComponentMapping;
@@ -1729,7 +1729,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         FLOAT ResourceMinLODClamp = 0.0f,
         UINT Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURE2D;
         desc.Shader4ComponentMapping = Shader4ComponentMapping;
@@ -1750,7 +1750,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         FLOAT ResourceMinLODClamp = 0.0f,
         UINT Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURE2DARRAY;
         desc.Shader4ComponentMapping = Shader4ComponentMapping;
@@ -1767,7 +1767,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         DXGI_FORMAT Format,
         UINT Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURE2DMS;
         desc.Shader4ComponentMapping = Shader4ComponentMapping;
@@ -1781,7 +1781,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         UINT FirstArraySlice = 0,
         UINT Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURE2DMSARRAY;
         desc.Shader4ComponentMapping = Shader4ComponentMapping;
@@ -1797,7 +1797,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         FLOAT ResourceMinLODClamp = 0.0f,
         UINT Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURE3D;
         desc.Shader4ComponentMapping = Shader4ComponentMapping;
@@ -1814,7 +1814,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         FLOAT ResourceMinLODClamp = 0.0f,
         UINT Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURECUBE;
         desc.Shader4ComponentMapping = Shader4ComponentMapping;
@@ -1833,7 +1833,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
         FLOAT ResourceMinLODClamp = 0.0f,
         UINT Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURECUBEARRAY;
         desc.Shader4ComponentMapping = Shader4ComponentMapping;
@@ -1848,7 +1848,7 @@ struct CD3DX12_SHADER_RESOURCE_VIEW_DESC : public D3D12_SHADER_RESOURCE_VIEW_DES
     static inline CD3DX12_SHADER_RESOURCE_VIEW_DESC RaytracingAccelStruct(
         D3D12_GPU_VIRTUAL_ADDRESS Location) noexcept
     {
-        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc;
+        CD3DX12_SHADER_RESOURCE_VIEW_DESC desc = {};
         desc.Format = DXGI_FORMAT_UNKNOWN;
         desc.ViewDimension = D3D12_SRV_DIMENSION_RAYTRACING_ACCELERATION_STRUCTURE;
         desc.Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING;
@@ -1871,7 +1871,7 @@ struct CD3DX12_UNORDERED_ACCESS_VIEW_DESC : public D3D12_UNORDERED_ACCESS_VIEW_D
         UINT64 FirstElement = 0,
         UINT64 CounterOffsetInBytes = 0) noexcept
     {
-        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc;
+        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc = {};
         desc.Format = DXGI_FORMAT_UNKNOWN;
         desc.ViewDimension = D3D12_UAV_DIMENSION_BUFFER;
         desc.Buffer.FirstElement = FirstElement;
@@ -1887,7 +1887,7 @@ struct CD3DX12_UNORDERED_ACCESS_VIEW_DESC : public D3D12_UNORDERED_ACCESS_VIEW_D
         UINT64 FirstElement = 0,
         UINT64 CounterOffsetInBytes = 0) noexcept
     {
-        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc;
+        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc = {};
         desc.Format = DXGI_FORMAT_R32_UINT;
         desc.ViewDimension = D3D12_UAV_DIMENSION_BUFFER;
         desc.Buffer.FirstElement = FirstElement;
@@ -1904,7 +1904,7 @@ struct CD3DX12_UNORDERED_ACCESS_VIEW_DESC : public D3D12_UNORDERED_ACCESS_VIEW_D
         UINT64 FirstElement = 0,
         UINT64 CounterOffsetInBytes = 0) noexcept
     {
-        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc;
+        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_UAV_DIMENSION_BUFFER;
         desc.Buffer.FirstElement = FirstElement;
@@ -1919,7 +1919,7 @@ struct CD3DX12_UNORDERED_ACCESS_VIEW_DESC : public D3D12_UNORDERED_ACCESS_VIEW_D
         DXGI_FORMAT Format,
         UINT MipSlice = 0) noexcept
     {
-        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc;
+        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_UAV_DIMENSION_TEXTURE1D;
         desc.Texture1D.MipSlice = MipSlice;
@@ -1932,7 +1932,7 @@ struct CD3DX12_UNORDERED_ACCESS_VIEW_DESC : public D3D12_UNORDERED_ACCESS_VIEW_D
         UINT FirstArraySlice = 0,
         UINT MipSlice = 0) noexcept
     {
-        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc;
+        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_UAV_DIMENSION_TEXTURE1DARRAY;
         desc.Texture1DArray.MipSlice = MipSlice;
@@ -1946,7 +1946,7 @@ struct CD3DX12_UNORDERED_ACCESS_VIEW_DESC : public D3D12_UNORDERED_ACCESS_VIEW_D
         UINT MipSlice = 0,
         UINT PlaneSlice = 0) noexcept
     {
-        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc;
+        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_UAV_DIMENSION_TEXTURE2D;
         desc.Texture2D.MipSlice = MipSlice;
@@ -1961,7 +1961,7 @@ struct CD3DX12_UNORDERED_ACCESS_VIEW_DESC : public D3D12_UNORDERED_ACCESS_VIEW_D
         UINT MipSlice = 0,
         UINT PlaneSlice = 0) noexcept
     {
-        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc;
+        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_UAV_DIMENSION_TEXTURE2DARRAY;
         desc.Texture2DArray.MipSlice = MipSlice;
@@ -1974,7 +1974,7 @@ struct CD3DX12_UNORDERED_ACCESS_VIEW_DESC : public D3D12_UNORDERED_ACCESS_VIEW_D
     static inline CD3DX12_UNORDERED_ACCESS_VIEW_DESC Tex2DMS(
         DXGI_FORMAT Format) noexcept
     {
-        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc;
+        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_UAV_DIMENSION_TEXTURE2DMS;
         //desc.Texture2DMS.UnusedField_NothingToDefine = 0;
@@ -1986,7 +1986,7 @@ struct CD3DX12_UNORDERED_ACCESS_VIEW_DESC : public D3D12_UNORDERED_ACCESS_VIEW_D
         UINT ArraySize = -1,
         UINT FirstArraySlice = 0) noexcept
     {
-        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc;
+        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_UAV_DIMENSION_TEXTURE2DMSARRAY;
         desc.Texture2DMSArray.FirstArraySlice = FirstArraySlice;
@@ -2000,7 +2000,7 @@ struct CD3DX12_UNORDERED_ACCESS_VIEW_DESC : public D3D12_UNORDERED_ACCESS_VIEW_D
         UINT FirstWSlice = 0,
         UINT MipSlice = 0) noexcept
     {
-        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc;
+        CD3DX12_UNORDERED_ACCESS_VIEW_DESC desc = {};
         desc.Format = Format;
         desc.ViewDimension = D3D12_UAV_DIMENSION_TEXTURE3D;
         desc.Texture3D.MipSlice = MipSlice;
@@ -2068,5 +2068,3 @@ struct CD3DX12_SERIALIZED_ROOT_SIGNATURE_DESC : public D3D12_SERIALIZED_ROOT_SIG
         SerializedBlobSizeInBytes = size;
     }
 };
-
-
