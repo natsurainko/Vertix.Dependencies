@@ -1,0 +1,6 @@
+# Build cache
+.cache/
+
+# IDE / editor
+.idea/
+.vs/
