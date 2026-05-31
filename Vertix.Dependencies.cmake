@@ -7,9 +7,13 @@
 set(VX_INCLUDES  ${CMAKE_CURRENT_LIST_DIR}/includes)
 set(VX_LIBRARIES ${CMAKE_CURRENT_LIST_DIR}/libraries)
 
+link_directories(AFTER ${VX_LIBRARIES})
+
 # ---- d3d12 (headers only) ----
 add_library(d3d12 INTERFACE IMPORTED GLOBAL)
+find_library(D3D12_LIB d3d12)
 set_target_properties(d3d12 PROPERTIES
+    INTERFACE_LINK_LIBRARIES      "${D3D12_LIB}"
     INTERFACE_INCLUDE_DIRECTORIES "${VX_INCLUDES}/d3d12"
 )
 
